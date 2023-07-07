@@ -2,10 +2,10 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('docker-hub-credentials')
     }
-    agent {
+    /*agent {
         docker {image 'node:12.0'}
-    }
-    //agent any
+    }*/
+    agent any
     stages {
         stage ("docker hub login") {
             steps {
