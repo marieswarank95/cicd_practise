@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('docker-hub-crdentials')
+        DOCKERHUB_CREDENTIALS = credentials('docker-hub-credentials')
     }
     /*agent {
         docker {image 'node:12.0'}
